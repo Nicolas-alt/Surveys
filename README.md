@@ -1,20 +1,22 @@
-# Getting Started with Create React App
+# Front-end: Aplicación de encuestas.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+"Construir una aplicación la cual permita ingresar un set de preguntas y estas mostrarlas en un cliente, este cliente debe permitir registrar datos de personas  y también hacerles preguntas donde sus respuestas deberán ser almacenadas, las respuestas deberán ser, en formato de texto o selección multiple, sólo usuarios registrados podrán recolectar datos y estos se registran en un panel de administración, el mismo donde se crean las preguntas. Un reporte estadístico de las respuestas vendría bien"
 
-## Available Scripts
+[-->Video original y más desafíos aquí. <--](https://www.youtube.com/watch?v=aouDQ8caJYg)
 
-In the project directory, you can run:
 
-### `yarn start`
+## Correr en local
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Se ejecuta en el puerto 3000
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+ ```
+ npm i 
 
-### `yarn test`
+ yarn start
+ 
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### Back-end del aplicativo [aquí](https://github.com/Nicolas-alt/surveys-backend)
+
+## Aplicativo funcional [aquí]()
