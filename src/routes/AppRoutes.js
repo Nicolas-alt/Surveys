@@ -1,22 +1,30 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from 'react-router-dom';
+import AuthProvider from '../auth/AuthContext';
+
 import LandingScreen from '../templates/landig/LandingScreen';
-import LoginScreen from '../templates/login/LoginScreen';
-import RegisterScreen from '../templates/register/RegisterScreen';
+import AuthRoutes from './AuthRoutes';
 import DashboardRoutes from './DashboardRoutes';
 
 const AppRoutes = () => {
   return (
-    <Router>
-      <div>
-        <Switch>
-          <Route exact path="/" component={LandingScreen} />
-          <Route exact path="/auth/login" component={LoginScreen} />
-          <Route exact path="/auth/register" component={RegisterScreen} />
-          <Route path="/dashboard" component={DashboardRoutes} />
-        </Switch>
-      </div>
-    </Router>
+    <AuthProvider>
+      <Router>
+        <div>
+          <Switch>
+            <Route exact path="/" component={LandingScreen} />
+            <Route path="/auth" component={AuthRoutes} />
+            <Route path="/dashboard" component={DashboardRoutes} />
+            <Redirect to="/" />
+          </Switch>
+        </div>
+      </Router>
+    </AuthProvider>
   );
 };
 

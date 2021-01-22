@@ -10,11 +10,11 @@ const DashboardRoutes = () => {
   return (
     <div>
       <Switch>
-        <Route exact path="/" component={DashboardScreen} />
-        <Route exact path="/survey" component={SurveyScreen} />
-        <Route exact path="/charts" component={ChartScreen} />
-        <Route exact path="/profile" component={UsersScreen} />
-        <Route exact path="/users" component={UsersScreen} />
+        <Route exact path="/dashboard/home" component={DashboardScreen} />
+        <Route exact path="/dashboard/survey" component={SurveyScreen} />
+        <Route exact path="/dashboard/charts" component={ChartScreen} />
+        <Route exact path="/dashboard/profile" component={UsersScreen} />
+        <Route exact path="/dashboard/users" component={UsersScreen} />
       </Switch>
     </div>
   );
